@@ -2,8 +2,6 @@ library(ggplot2)
 library(tidyverse)
 
 # Games history plot of Jean and Cédric
-colors <- c("Jean" = "Blue", "Cedric" = "Red", "Adrianne" = "Green")
-
 JC_GamesPlot <- JC_PingPongGames %>% 
   ggplot(aes(x = as.numeric(row.names(JC_PingPongGames)))) + 
   geom_line(aes(y = Jean, col = "Jean")) + 
@@ -15,14 +13,12 @@ JC_GamesPlot <- JC_PingPongGames %>%
 JC_GamesPlot
 
 # Games history plot of Adrianne and Cédric
-colors <- c("Jean" = "Blue", "Cedric" = "Red", "Adrianne" = "Green")
-
 AC_GamesPlot <- AC_PingPongGames %>% 
   ggplot(aes(x = as.numeric(row.names(AC_PingPongGames)))) + 
-  geom_line(aes(y = Adrianne, col = "Adrianne")) + 
-  geom_line(aes(y = Cedric, col = "Cedric")) + 
+  geom_line(aes(y = Cedric, col = "Cédric")) + 
+  geom_line(aes(y = Adrianne, col = "Adrianne")) +
   ggtitle("Les points de Adrianne et Cédric sur toutes leurs parties") + 
-  labs(y = "Les points de Jean et Cédric", x = "Numéro de partie", color = "Légende") +
+  labs(y = "Les points d'Adrianne et Cédric", x = "Numéro de partie", color = "Légende") +
   expand_limits(y = 0)
 
 AC_GamesPlot

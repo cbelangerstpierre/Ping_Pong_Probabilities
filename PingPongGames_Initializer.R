@@ -8,10 +8,10 @@ Year <- c(21, 21, 21, 21)
 JC_PingPongGames <- data.frame(Jean, Cedric, Day, Month, Year)
 
 # PingPongGames_Initializer of Adrianne et Cédric
-Adrianne <- c()
-Cedric <- c()
-Day <- c()
-Month <- c()
-Year <- c()
+Adrianne <- c(3)
+Cedric <- c(21)
+Day <- c(14)
+Month <- c(4)
+Year <- c(21)
 
 AC_PingPongGames <- data.frame(Adrianne, Cedric, Day, Month, Year)

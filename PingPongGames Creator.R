@@ -4,7 +4,7 @@ library(tidyverse)
 PointsCedric <- c()
 PointsJean <- c()
 PointsAdrianne <- c()
-DayOfGames <- 10
+DayOfGames <- 19
 MonthOfGames <- 4
 YearOfGames <- 21
 
